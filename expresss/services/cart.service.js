@@ -8,7 +8,7 @@
     try {
         const cartInfo = await CartSchema.findById(req.params.id);
         console.log(cartInfo);
-        return res.json({
+        return res.json({  
             status: true,
             msg: "details shown",
             data: cartInfo,
